@@ -1,14 +1,15 @@
 import { View, Text, Button, Pressable, StyleSheet, Image, ImageBackground } from "react-native";
 import Aa from "../Images/Aa.png";
 import hand from "../Images/image 5.png";
-import background from "../Images/background.png";
+import background from "../Images/home_background.png";
 
 export function HomeScreen({ navigation }) {
     return (
         <ImageBackground source={background} style = {styles.image}>
                 <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             
-                {/* <Text>Home Screen</Text> */}
+                <Text style={styles.homeTitleText}>great, you're in!</Text>
+                <Text style={styles.homeTitleText}>what's the vibe today?</Text>
                     <View style= {{ flexDirection: "row"}}>
                         <Pressable 
                             style = {[styles.button, styles.buttonOrange]} 
@@ -50,6 +51,14 @@ export function HomeScreen({ navigation }) {
   }
 
 const styles = StyleSheet.create({
+    homeTitleText: {
+        fontSize: 28,
+        fontWeight: "bold",
+        color: '#FFFFFF'
+        //fontFamily: ,
+
+    },
+
     buttonImage: {
         width: 90,
         height: 90,

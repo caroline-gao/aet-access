@@ -1,9 +1,15 @@
-import { View, Text } from "react-native";
+import { View, Image, Text, ImageBackground, StyleSheet, Pressable, Button} from "react-native";
+import ILVHome from "../Images/ILV_Home_Screen.png"
+import { styles } from "./HomeScreen";
 
-export function LyricScreen() {
+
+export function LyricScreen({navigation}) {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Lyric Screen</Text>
-      </View>
+      <ImageBackground source={ILVHome} style = {styles.image}>
+   
+      </ImageBackground>
+       
+            
+
     );
   }

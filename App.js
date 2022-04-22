@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { HomeScreen } from './Screens/HomeScreen';
 import { LyricScreen } from './Screens/LyricScreen';
 import { SignScreen } from './Screens/SignScreen';
+import { ILVPrepScrren } from './Screens/ILVPrepScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ function App() {
         <Stack.Screen options={{headerShown: false}} name="Home" component={HomeScreen} />
         <Stack.Screen name="Lyrics" component={LyricScreen} />
         <Stack.Screen name="Signing" component={SignScreen} />
+        <Stack.Screen name="PrepScreen" component={ILVPrepScrren} />
       </Stack.Navigator>
     </NavigationContainer>
   );

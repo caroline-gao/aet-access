@@ -50,7 +50,7 @@ export function HomeScreen({ navigation }) {
     );
   }
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
     homeTitleText: {
         fontSize: 28,
         fontWeight: "bold",
@@ -90,5 +90,13 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
         justifyContent: 'center',
       },
+    container: {
+        flex: 0.3,
+        backgroundColor: "#28184B",
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        padding: 10,
+        margin: 20,
+    }
 
 })

@@ -1,9 +1,11 @@
-import { View, Text } from "react-native";
+import { View, Text, ImageBackground } from "react-native";
+import signBackground from "../Images/signBackground.png"
+import { styles } from "./HomeScreen";
 
 export function SignScreen() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Sign Screen</Text>
-      </View>
+      <ImageBackground source={signBackground} style = {styles.image}>
+        
+      </ImageBackground>
     );
   }

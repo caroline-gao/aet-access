@@ -6,6 +6,7 @@ import { HomeScreen } from './Screens/HomeScreen';
 import { LyricScreen } from './Screens/LyricScreen';
 import { SignScreen } from './Screens/SignScreen';
 import { ILVPrepScrren } from './Screens/ILVPrepScreen';
+import {SignHomeScreen} from './Screens/SignHomeScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ function App() {
         <Stack.Screen name="Lyrics" component={LyricScreen} />
         <Stack.Screen name="Signing" component={SignScreen} />
         <Stack.Screen name="PrepScreen" component={ILVPrepScrren} />
+        <Stack.Screen name="SignHome" component={SignHomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

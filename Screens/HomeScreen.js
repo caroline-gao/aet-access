@@ -1,6 +1,6 @@
 import { View, Text, Button, Pressable, StyleSheet, Image, ImageBackground } from "react-native";
-import Aa from "../Images/Aa.png";
-import hand from "../Images/image 5.png";
+import Aa from "../Images/Aa white.png";
+import hand from "../Images/image 5 white.png";
 import background from "../Images/home_background.png";
 
 export function HomeScreen({ navigation }) {
@@ -12,7 +12,7 @@ export function HomeScreen({ navigation }) {
                 <Text style={styles.homeTitleText}>what's the vibe today?</Text>
                     <View style= {{ flexDirection: "row"}}>
                         <Pressable 
-                            style = {[styles.button, styles.buttonOrange]} 
+                            style = {[styles.button, styles.buttonBlue]} 
                             onPress={() => navigation.navigate('Lyrics')}
                         >
                             <Image 
@@ -24,7 +24,7 @@ export function HomeScreen({ navigation }) {
                             </Text>
                         </Pressable>
                         <Pressable 
-                            style = {[styles.button, styles.buttonBlue]}
+                            style = {[styles.button, styles.buttonPink]}
                             onPress={() => navigation.navigate('Signing')}
                         >
                             <Image 
@@ -54,7 +54,8 @@ export const styles = StyleSheet.create({
     homeTitleText: {
         fontSize: 28,
         fontWeight: "bold",
-        color: '#FFFFFF'
+        color: '#FFFFFF',
+        textAlign: "center",
         //fontFamily: ,
 
     },
@@ -74,16 +75,29 @@ export const styles = StyleSheet.create({
         borderRadius: 8,
         marginTop: 150
     },
+    signButton: {
+        width: 287,
+        height: 60,
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 4,
+        marginHorizontal: 20,
+        borderRadius: 8,
+        marginTop: 150
+    },
     buttonLabel: {
         width: 80,
         textAlign: "center",
+        color: "#FFFFFF",
     },
-    buttonOrange: {
-        backgroundColor: "#F8A186"
+    buttonPink: {
+        backgroundColor: "#DC64D0"
     },
     buttonBlue: {
-        backgroundColor: "#52DFD7"
-
+        backgroundColor: "#528ADF"
+    },
+    buttonDarkBlue: {
+        backgroundColor: "#1C0749"
     },
     image: {
         flex: 1,
@@ -101,6 +115,23 @@ export const styles = StyleSheet.create({
         height: 50,
         padding: 10,
         margin: 20,
-    }
+    },
+    signTitleText: {
+        fontSize: 20,
+        color: '#FFFFFF',
+        textAlign: "center",
+        marginHorizontal: 40,
+        backgroundColor: "#1C0749",
+        padding: 10,
+        borderRadius: 10,
+        //fontFamily: ,
+    },
+    signButtonLabel: {
+        width: 273,
+        fontSize: 28,
+        fontWeight: "bold",
+        textAlign: "center",
+        color: "#FFFFFF",
+    },
 
 })

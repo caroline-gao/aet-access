@@ -7,6 +7,9 @@ import { LyricScreen } from './Screens/LyricScreen';
 import { SignScreen } from './Screens/SignScreen';
 import { ILVPrepScrren } from './Screens/ILVPrepScreen';
 import {SignHomeScreen} from './Screens/SignHomeScreen';
+import { WelcomeScreen } from './Screens/WelcomeScreen';
+import {ILVProfileScreen} from './Screens/ILVProfileScreen';
+import { NewUserScreen } from './Screens/NewUserScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,11 +17,14 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen options={{headerShown: false}} name="Home" component={HomeScreen} />
+        <Stack.Screen options={{headerShown: false}} name="Welcome" component={WelcomeScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Lyrics" component={LyricScreen} />
         <Stack.Screen name="Signing" component={SignScreen} />
         <Stack.Screen name="PrepScreen" component={ILVPrepScrren} />
+        <Stack.Screen name="ProfileScreen" component={ILVProfileScreen} />
         <Stack.Screen name="SignHome" component={SignHomeScreen} />
+        <Stack.Screen name="NewUser" component={NewUserScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -7,7 +7,7 @@ export function ILVProfileScreen({navigation}){
     return (
         <ImageBackground source={ProfileBackground} style={styles.image}>
             <Pressable
-            style = {[styles.button, styles.bigButton, styles.buttonBlue]} 
+            style = {[styles.button, styles.bigButton, styles.buttonPink]} 
                             onPress={() => navigation.navigate('PrepScreen')}>
             </Pressable>
         </ImageBackground>

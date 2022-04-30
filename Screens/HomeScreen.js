@@ -1,6 +1,6 @@
 import { View, Text, Pressable, StyleSheet, Image, ImageBackground } from "react-native";
-import Aa from "../Images/Aa white.png";
-import hand from "../Images/image 5 white.png";
+// import Aa from "../Images/Aa white.png";
+// import hand from "../Images/image 5 white.png";
 import background from "../Images/home_background.png";
 
 export function HomeScreen({ navigation }) {
@@ -16,7 +16,7 @@ export function HomeScreen({ navigation }) {
                             onPress={() => navigation.navigate('Lyrics')}
                         >
                             <Image 
-                                source={Aa}
+                                source={require("../Images/Aa_white.png")}
                                 style = {styles.buttonImage}
                             />
                             <Text style = {styles.buttonLabel}>
@@ -28,7 +28,7 @@ export function HomeScreen({ navigation }) {
                             onPress={() => navigation.navigate('Signing')}
                         >
                             <Image 
-                                source={hand}
+                                source={require("../Images/image5white.png")}
                                 style = {styles.buttonImage}
                             />
                             <Text style = {styles.buttonLabel}>

@@ -1,4 +1,4 @@
-import { View, Image, Text, ImageBackground, StyleSheet, Pressable, Button} from "react-native";
+import { View, Text, ImageBackground} from "react-native";
 import ILVHome from "../Images/ILV_Home_Screen.png"
 import { styles } from "./HomeScreen";
 

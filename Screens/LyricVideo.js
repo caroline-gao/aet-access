@@ -3,12 +3,14 @@ import { useRef, useEffect, useState } from "react";
 import { styles } from "./HomeScreen";
 const sunflower = require('../Images/SunflowerSound.mp4');
 import {Video} from 'expo-av';
+import * as Haptics from 'expo-haptics';
 
 export function LyricVideo({navigation}) {
     const PATTERN = [
-        1000,
-        1000, 
-        1000
+        2600,
+        2500, 
+        2500,
+        2800,
 
     ]
 
@@ -19,11 +21,12 @@ export function LyricVideo({navigation}) {
     };
     useEffect(() => {
         videoRef.current.playAsync()
-        setInterval(() => {setCount(count => count + 1)}, 600);
+        setInterval(() => {setCount(count => count + 1)}, 169);
     }, []);
     useEffect(() => {
-         Vibration.vibrate(PATTERN);
-
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+        Vibration.vibrate(PATTERN);
     }, [count]);
 
     return(

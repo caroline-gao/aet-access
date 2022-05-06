@@ -1,7 +1,7 @@
 import { View , Vibration} from "react-native";
 import { useRef, useEffect, useState } from "react";
 import { styles } from "./HomeScreen";
-const sunflower = require('../Images/Sunflower.mp4');
+const sunflower = require('../Images/SunflowerSound.mp4');
 import {Video} from 'expo-av';
 
 export function LyricVideo({navigation}) {

@@ -5,12 +5,12 @@ const sunflower = require('../Images/Sunflower.mp4');
 import {Video} from 'expo-av';
 
 export function LyricVideo({navigation}) {
-    // const PATTERN = [
-    //     1000,
-    //     2000, 
-    //     3000
+    const PATTERN = [
+        1000,
+        1000, 
+        1000
 
-    // ]
+    ]
 
     const [count, setCount] = useState(0);
     const videoRef = useRef(null);
@@ -19,10 +19,10 @@ export function LyricVideo({navigation}) {
     };
     useEffect(() => {
         videoRef.current.playAsync()
-        setInterval(() => {setCount(count => count + 1)}, 169);
+        setInterval(() => {setCount(count => count + 1)}, 600);
     }, []);
     useEffect(() => {
-         Vibration.vibrate(100);
+         Vibration.vibrate(PATTERN);
 
     }, [count]);
 

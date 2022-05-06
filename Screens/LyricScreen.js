@@ -5,7 +5,7 @@ import { styles } from "./HomeScreen";
 
 export function LyricScreen({navigation}) {
     return (
-        <ImageBackground source={ILVHome} resizeMode style = {styles.image}>
+        <ImageBackground source={ILVHome} style = {styles.image}>
 
           <View style={{flex: 1}} onStartShouldSetResponder = {() =>  navigation.navigate('ProfileScreen')
   }>
